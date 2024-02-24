@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock_Paper Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-video">
+        <video autoplay muted loop>
+          <source src="bg.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+    <div id="Box">
+        <div id="Symbols">
+            <button id="Rock" onclick="Rock()">✊🏼</button>
+            <button id="Paper" onclick="Paper()">✋🏼</button>
+            <button id="Scissors" onclick="Scissors()">✌🏼</button>
+        </div>
+        <div id="Players">
+        </div>
+        <div id="Show">
+        </div>
+        <div id="annoce">  
+        </div>
+        <div id="reset">
+            <button id="reset-btn" onclick="Reset()">Reset</button>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>

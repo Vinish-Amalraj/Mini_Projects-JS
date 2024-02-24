@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tips Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://cdn0.iconfinder.com/data/icons/business-startup-10/50/29-512.png"
+    />
+  </head>
+  <body>
+    <div id="box">
+      <h1 style="justify-content: center; display: flex; margin-bottom: 20px">
+        Tip Calculator
+      </h1>
+      <div id="box1">
+        <h2>Bill Amount</h2>
+        <p>Rs.</p>
+        <input
+          id="Bill"
+          type="number"
+          onkeyup="total()"
+          placeholder="Enter Bill Amount..."
+        />
+
+        <h2>Tip Percentage</h2>
+        <p>%</p>
+        <input
+          id="Tip"
+          type="number"
+          onkeyup="total()"
+          placeholder="Enter Tip Amount..."
+        />
+      </div>
+      <div id="box2">
+        <div id="box3">
+          <div id="box4">
+            <h3>Persons</h3>
+          </div>
+          <div id="box5">
+            <button onclick="Decrement()" id="de">-</button>
+            <p id="Persons">1</p>
+            <button onclick="Increment()" id="in">+</button>
+          </div>
+        </div>
+        <div id="box6">
+          <h3>Total Per Person</h3>
+          <h2 id="Amount">Rs.0</h2>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
