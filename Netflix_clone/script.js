@@ -4,10 +4,7 @@ window.onload = () => {
   getTopRated();
 };
 
-// ** Helper function that makes dynamic API calls **
-// path_type 👉 (backdrop, poster)
-// dom_element 👉 (trending, top rated)
-// fetchMovies('https://api.themoviedb.org/3/movie/top_rated?api_key=19f84e11932abbc79e6d83f82d6d1045&language=en-US&page=1', 'top_rated', 'backdrop_path')
+
 function fetchMovies(url, dom_element, path_type) {
   fetch(url)
     .then((response) => {
